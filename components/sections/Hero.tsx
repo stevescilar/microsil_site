@@ -1,13 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, ShieldCheck, Code2, BarChart3, Camera } from "lucide-react";
+import {
+  ArrowRight,
+  ShieldCheck,
+  Code2,
+  BarChart3,
+  Camera,
+} from "lucide-react";
 import Container from "../layout/Container";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] },
+  transition: { duration: 0.6, delay },
 });
 
 export default function Hero() {
@@ -21,7 +27,6 @@ export default function Hero() {
 
       <Container>
         <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
-
           {/* ── LEFT COLUMN ── */}
           <div className="flex flex-col">
             <motion.div {...fadeUp(0)}>
@@ -65,7 +70,10 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.7,
+              delay: 0.15,
+            }}
             className="relative"
           >
             {/* Hero image */}
@@ -91,7 +99,9 @@ export default function Hero() {
               <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center mb-3">
                 <Code2 className="w-5 h-5 text-emerald-600" />
               </div>
-              <h3 className="font-bold text-sm text-slate-900">Custom Software</h3>
+              <h3 className="font-bold text-sm text-slate-900">
+                Custom Software
+              </h3>
               <p className="text-xs text-slate-500 mt-1 leading-snug">
                 Built for performance and scalability.
               </p>
@@ -107,7 +117,9 @@ export default function Hero() {
               <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center mb-3">
                 <ShieldCheck className="w-5 h-5 text-emerald-600" />
               </div>
-              <h3 className="font-bold text-sm text-slate-900">System Security</h3>
+              <h3 className="font-bold text-sm text-slate-900">
+                System Security
+              </h3>
               <p className="text-xs text-slate-500 mt-1 leading-snug">
                 Protecting what matters most.
               </p>
@@ -139,13 +151,14 @@ export default function Hero() {
               <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center mb-3">
                 <Camera className="w-5 h-5 text-slate-700" />
               </div>
-              <h3 className="font-bold text-sm text-slate-900">CCTV Solutions</h3>
+              <h3 className="font-bold text-sm text-slate-900">
+                CCTV Solutions
+              </h3>
               <p className="text-xs text-slate-500 mt-1 leading-snug">
                 Reliable surveillance for total protection.
               </p>
             </motion.div>
           </motion.div>
-
         </div>
       </Container>
     </section>

@@ -23,7 +23,7 @@ export default function SectionTitle({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.6 }}
       className={`max-w-3xl ${centered ? "mx-auto text-center" : ""}`}
     >
       {/* Eyebrow */}
@@ -36,7 +36,7 @@ export default function SectionTitle({
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.5 }}
             className="block h-[2px] w-8 bg-emerald-500 rounded-full origin-left"
           />
         )}
@@ -54,7 +54,6 @@ export default function SectionTitle({
               viewport={{ once: true }}
               transition={{
                 duration: 0.5,
-                ease: [0.22, 1, 0.36, 1],
                 delay: 0.1,
               }}
               className="block h-[2px] w-8 bg-emerald-500 rounded-full origin-left"
@@ -68,7 +67,7 @@ export default function SectionTitle({
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.6, delay: 0.1 }}
         className="mt-3 text-4xl lg:text-5xl font-black tracking-tight text-slate-900 leading-[1.08]"
       >
         {title}
@@ -80,7 +79,7 @@ export default function SectionTitle({
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.55, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.55, delay: 0.2 }}
           className="mt-5 text-lg text-slate-500 leading-relaxed"
         >
           {description}

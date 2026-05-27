@@ -68,7 +68,7 @@ export default function ParallaxBanner({
         <motion.div
           initial={{ scaleX: 0, originX: 0 }}
           whileInView={{ scaleX: 1 }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.7 }}
           viewport={{ once: true }}
           className="w-12 h-[3px] bg-emerald-500 mb-6 rounded-full"
         />
@@ -76,7 +76,7 @@ export default function ParallaxBanner({
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.65, delay: 0.15 }}
           viewport={{ once: true }}
           className="text-2xl md:text-4xl lg:text-5xl font-black text-white leading-[1.1] tracking-tight max-w-2xl"
         >

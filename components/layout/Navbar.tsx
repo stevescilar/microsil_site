@@ -10,9 +10,10 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Projects", href: "/projects" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -141,7 +142,7 @@ export default function Navbar() {
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
-              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.35 }}
               className="fixed top-0 right-0 z-50 h-full w-[75vw] max-w-xs bg-white shadow-2xl flex flex-col md:hidden"
             >
               {/* Drawer header */}
